@@ -18,6 +18,9 @@ ENV/
 *.zip
 *.tar.gz
 
+# Include MIMIC-IV Clinical Database Demo
+!mimic-iv-clinical-database-demo-2.2/**
+
 # IDE and OS Metadata
 .vscode/
 .idea/
