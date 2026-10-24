@@ -1,0 +1,40 @@
+{
+  "dataset_name": "eICU Collaborative Research Database Demo",
+  "version": "2.0.1",
+  "total_raw_stays": 2520,
+  "unique_raw_patients": 1841,
+  "eligible_cohort_stays_ge_24h": 1623,
+  "unique_cohort_patients": 1329,
+  "prolonged_stay_positive_class": 549,
+  "standard_stay_negative_class": 1074,
+  "prolonged_stay_prevalence_pct": 33.83,
+  "age_statistics": {
+    "mean": 64.16,
+    "std": 17.27,
+    "median": 67.0,
+    "min": 18.0,
+    "max": 90.0
+  },
+  "icu_stay_days_statistics": {
+    "mean": 3.45,
+    "std": 3.94,
+    "median": 2.18,
+    "q25": 1.55,
+    "q75": 3.81
+  },
+  "gender_distribution": {
+    "Male": 966,
+    "Female": 657
+  },
+  "care_unit_distribution": {
+    "Med-Surg ICU": 1205,
+    "MICU": 92,
+    "Cardiac ICU": 92,
+    "CCU-CTICU": 57,
+    "SICU": 54,
+    "Neuro ICU": 46,
+    "CTICU": 40,
+    "CSICU": 37
+  },
+  "total_features_extracted": 148
+}

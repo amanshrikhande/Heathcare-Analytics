@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "random_seed": 42,
+    "dataset": "eICU Collaborative Research Database Demo v2.0.1",
+    "train_stays": 1293,
+    "test_stays": 330,
+    "train_patients": 1063,
+    "test_patients": 266
+  },
+  "cv_experiments": {
+    "Dummy_Baseline__static": {
+      "roc_auc_mean": 0.5,
+      "roc_auc_std": 0.0,
+      "f1_mean": 0.0
+    },
+    "Logistic_Regression__static": {
+      "roc_auc_mean": 0.5856,
+      "roc_auc_std": 0.0346,
+      "f1_mean": 0.4643
+    },
+    "Random_Forest__static": {
+      "roc_auc_mean": 0.6097,
+      "roc_auc_std": 0.0276,
+      "f1_mean": 0.39
+    },
+    "HistGradientBoosting__static": {
+      "roc_auc_mean": 0.5791,
+      "roc_auc_std": 0.028,
+      "f1_mean": 0.4109
+    },
+    "Dummy_Baseline__snapshot": {
+      "roc_auc_mean": 0.5,
+      "roc_auc_std": 0.0,
+      "f1_mean": 0.0
+    },
+    "Logistic_Regression__snapshot": {
+      "roc_auc_mean": 0.5692,
+      "roc_auc_std": 0.0333,
+      "f1_mean": 0.4427
+    },
+    "Random_Forest__snapshot": {
+      "roc_auc_mean": 0.6046,
+      "roc_auc_std": 0.039,
+      "f1_mean": 0.3705
+    },
+    "HistGradientBoosting__snapshot": {
+      "roc_auc_mean": 0.5813,
+      "roc_auc_std": 0.0337,
+      "f1_mean": 0.3979
+    },
+    "Dummy_Baseline__latff": {
+      "roc_auc_mean": 0.5,
+      "roc_auc_std": 0.0,
+      "f1_mean": 0.0
+    },
+    "Logistic_Regression__latff": {
+      "roc_auc_mean": 0.6375,
+      "roc_auc_std": 0.0244,
+      "f1_mean": 0.4869
+    },
+    "Random_Forest__latff": {
+      "roc_auc_mean": 0.6546,
+      "roc_auc_std": 0.0213,
+      "f1_mean": 0.3755
+    },
+    "HistGradientBoosting__latff": {
+      "roc_auc_mean": 0.6437,
+      "roc_auc_std": 0.0146,
+      "f1_mean": 0.4343
+    }
+  },
+  "test_experiments": {
+    "Dummy_Baseline__static": {
+      "classification": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.3181818181818182,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.6818181818181818,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1": 0.0,
+        "brier_score": 0.3181818181818182,
+        "confusion_matrix": [
+          [
+            225,
+            0
+          ],
+          [
+            105,
+            0
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 43.635909090909095,
+        "rmse_hours": 89.4298539090947,
+        "r2": -0.11009771215510122
+      }
+    },
+    "Logistic_Regression__static": {
+      "classification": {
+        "roc_auc": 0.5800211640211641,
+        "pr_auc": 0.40138970422771675,
+        "balanced_accuracy": 0.5485714285714286,
+        "accuracy": 0.5333333333333333,
+        "precision": 0.3583815028901734,
+        "recall": 0.5904761904761905,
+        "specificity": 0.5066666666666667,
+        "f1": 0.4460431654676259,
+        "brier_score": 0.2515617088391109,
+        "confusion_matrix": [
+          [
+            114,
+            111
+          ],
+          [
+            43,
+            62
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 52.86777368301428,
+        "rmse_hours": 85.3984210971671,
+        "r2": -0.01226879110914969
+      }
+    },
+    "Random_Forest__static": {
+      "classification": {
+        "roc_auc": 0.58205291005291,
+        "pr_auc": 0.3981378640130353,
+        "balanced_accuracy": 0.553015873015873,
+        "accuracy": 0.6121212121212121,
+        "precision": 0.3904761904761905,
+        "recall": 0.3904761904761905,
+        "specificity": 0.7155555555555555,
+        "f1": 0.3904761904761905,
+        "brier_score": 0.231878622730337,
+        "confusion_matrix": [
+          [
+            161,
+            64
+          ],
+          [
+            64,
+            41
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 52.72376856908806,
+        "rmse_hours": 86.1611683123052,
+        "r2": -0.03043196721795649
+      }
+    },
+    "HistGradientBoosting__static": {
+      "classification": {
+        "roc_auc": 0.5975026455026454,
+        "pr_auc": 0.4095005823880288,
+        "balanced_accuracy": 0.5495238095238095,
+        "accuracy": 0.5727272727272728,
+        "precision": 0.3695652173913043,
+        "recall": 0.4857142857142857,
+        "specificity": 0.6133333333333333,
+        "f1": 0.41975308641975306,
+        "brier_score": 0.24521187216461596,
+        "confusion_matrix": [
+          [
+            138,
+            87
+          ],
+          [
+            54,
+            51
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 57.063785099131586,
+        "rmse_hours": 90.66325415150233,
+        "r2": -0.1409293991021301
+      }
+    },
+    "Dummy_Baseline__snapshot": {
+      "classification": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.3181818181818182,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.6818181818181818,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1": 0.0,
+        "brier_score": 0.3181818181818182,
+        "confusion_matrix": [
+          [
+            225,
+            0
+          ],
+          [
+            105,
+            0
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 43.635909090909095,
+        "rmse_hours": 89.4298539090947,
+        "r2": -0.11009771215510122
+      }
+    },
+    "Logistic_Regression__snapshot": {
+      "classification": {
+        "roc_auc": 0.5555555555555556,
+        "pr_auc": 0.36974253512223126,
+        "balanced_accuracy": 0.5555555555555556,
+        "accuracy": 0.5393939393939394,
+        "precision": 0.36416184971098264,
+        "recall": 0.6,
+        "specificity": 0.5111111111111111,
+        "f1": 0.45323741007194246,
+        "brier_score": 0.255431866912572,
+        "confusion_matrix": [
+          [
+            115,
+            110
+          ],
+          [
+            42,
+            63
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 53.944481755699265,
+        "rmse_hours": 86.25923751632958,
+        "r2": -0.032778990935594665
+      }
+    },
+    "Random_Forest__snapshot": {
+      "classification": {
+        "roc_auc": 0.5932698412698414,
+        "pr_auc": 0.38816813746622647,
+        "balanced_accuracy": 0.5352380952380953,
+        "accuracy": 0.6121212121212121,
+        "precision": 0.37362637362637363,
+        "recall": 0.3238095238095238,
+        "specificity": 0.7466666666666667,
+        "f1": 0.3469387755102041,
+        "brier_score": 0.2297595896989795,
+        "confusion_matrix": [
+          [
+            168,
+            57
+          ],
+          [
+            71,
+            34
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 53.7184376430817,
+        "rmse_hours": 90.7573296029768,
+        "r2": -0.1432983662398788
+      }
+    },
+    "HistGradientBoosting__snapshot": {
+      "classification": {
+        "roc_auc": 0.5517460317460318,
+        "pr_auc": 0.3489640988771705,
+        "balanced_accuracy": 0.5276190476190477,
+        "accuracy": 0.5878787878787879,
+        "precision": 0.35514018691588783,
+        "recall": 0.3619047619047619,
+        "specificity": 0.6933333333333334,
+        "f1": 0.3584905660377358,
+        "brier_score": 0.2474328833744349,
+        "confusion_matrix": [
+          [
+            156,
+            69
+          ],
+          [
+            67,
+            38
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 53.656926494909214,
+        "rmse_hours": 88.37388873041768,
+        "r2": -0.08403697712962876
+      }
+    },
+    "Dummy_Baseline__latff": {
+      "classification": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.3181818181818182,
+        "balanced_accuracy": 0.5,
+        "accuracy": 0.6818181818181818,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1": 0.0,
+        "brier_score": 0.3181818181818182,
+        "confusion_matrix": [
+          [
+            225,
+            0
+          ],
+          [
+            105,
+            0
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 43.635909090909095,
+        "rmse_hours": 89.4298539090947,
+        "r2": -0.11009771215510122
+      }
+    },
+    "Logistic_Regression__latff": {
+      "classification": {
+        "roc_auc": 0.6366137566137565,
+        "pr_auc": 0.43103789499636525,
+        "balanced_accuracy": 0.6034920634920635,
+        "accuracy": 0.5909090909090909,
+        "precision": 0.40853658536585363,
+        "recall": 0.638095238095238,
+        "specificity": 0.5688888888888889,
+        "f1": 0.49814126394052044,
+        "brier_score": 0.24999138180921832,
+        "confusion_matrix": [
+          [
+            128,
+            97
+          ],
+          [
+            38,
+            67
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 55.9925682538258,
+        "rmse_hours": 89.1186214052744,
+        "r2": -0.10238446482435926
+      }
+    },
+    "Random_Forest__latff": {
+      "classification": {
+        "roc_auc": 0.683132275132275,
+        "pr_auc": 0.45511039686799604,
+        "balanced_accuracy": 0.6015873015873016,
+        "accuracy": 0.6818181818181818,
+        "precision": 0.5,
+        "recall": 0.38095238095238093,
+        "specificity": 0.8222222222222222,
+        "f1": 0.43243243243243246,
+        "brier_score": 0.21084554081128895,
+        "confusion_matrix": [
+          [
+            185,
+            40
+          ],
+          [
+            65,
+            40
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 51.35738755348249,
+        "rmse_hours": 85.67552345973237,
+        "r2": -0.018848705798285126
+      }
+    },
+    "HistGradientBoosting__latff": {
+      "classification": {
+        "roc_auc": 0.6995555555555555,
+        "pr_auc": 0.4831421205806015,
+        "balanced_accuracy": 0.6415873015873015,
+        "accuracy": 0.6878787878787879,
+        "precision": 0.5094339622641509,
+        "recall": 0.5142857142857142,
+        "specificity": 0.7688888888888888,
+        "f1": 0.5118483412322274,
+        "brier_score": 0.2072070013733941,
+        "confusion_matrix": [
+          [
+            173,
+            52
+          ],
+          [
+            51,
+            54
+          ]
+        ]
+      },
+      "regression": {
+        "mae_hours": 54.25848267562319,
+        "rmse_hours": 89.52313651535077,
+        "r2": -0.11241476424134444
+      }
+    }
+  },
+  "best_model": {
+    "classifier_model": "HistGradientBoosting",
+    "feature_representation": "latff",
+    "test_roc_auc": 0.6996,
+    "regressor_mae_hours": 51.36
+  }
+}

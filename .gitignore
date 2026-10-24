@@ -1,0 +1,26 @@
+# Python Bytecode and Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual Environments
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Large Datasets & Archives (Preserved locally, excluded from git repo)
+*.csv.gz
+*.sqlite3.gz
+*.zip
+*.tar.gz
+
+# IDE and OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

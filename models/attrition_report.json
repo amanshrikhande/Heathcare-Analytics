@@ -1,0 +1,11 @@
+{
+  "raw_icu_stays": 2520,
+  "adult_stays": 2512,
+  "pediatrics_excluded": 8,
+  "stays_under_24h_censored": 889,
+  "final_eligible_cohort": 1623,
+  "unique_patient_groups": 1329,
+  "prolonged_stays_pos": 549,
+  "standard_stays_neg": 1074,
+  "prolonged_prevalence_pct": 33.83
+}
